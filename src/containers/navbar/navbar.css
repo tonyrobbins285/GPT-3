@@ -1,0 +1,26 @@
+.navbar,
+.navbar__container,
+.navbar__ul,
+.navbar__sign {
+    display: flex;
+    align-items: center;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+    justify-content: space-between;
+    height: 100px;
+}
+
+.navbar__container {
+    width: 75%;
+}
+
+.navbar__ul a,
+.navbar__sign button {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+}
