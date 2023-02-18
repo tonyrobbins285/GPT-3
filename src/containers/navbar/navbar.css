@@ -1,26 +1,133 @@
-.navbar,
-.navbar__container,
-.navbar__ul,
-.navbar__sign {
-    display: flex;
-    align-items: center;
-}
-
 .navbar {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 1rem;
-    justify-content: space-between;
-    height: 100px;
+	display: flex;
+	align-items: center;
+	height: 100px;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 3rem 2rem 0;
 }
 
 .navbar__container {
-    width: 75%;
+	display: flex;
+	align-items: center;
+	flex: 2;
+	justify-content: start;
 }
 
-.navbar__ul a,
-.navbar__sign button {
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 25px;
+.navbar__container_logo {
+	display: flex;
+	align-items: center;
+	margin-right: 4rem;
+}
+.navbar__container_logo img {
+	width: 62.56px;
+	height: 16.02px;
+}
+
+.navbar__container_nav {
+	display: flex;
+	align-items: center;
+}
+.navbar__container_nav a {
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 25px;
+	text-transform: capitalize;
+	margin-right: 2rem;
+}
+
+.navbar__container_sign {
+	display: flex;
+	align-items: center;
+}
+.navbar_container_sign-icon {
+	display: none;
+}
+
+.navbar__container_sign button {
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 25px;
+	text-transform: capitalize;
+	margin-left: 2rem;
+}
+
+.navbar__container_sign-up {
+	background: #ff4820;
+	border-radius: 5px;
+	padding: 1rem 2rem;
+}
+
+.navbar__mobile {
+	position: relative;
+	z-index: 3;
+	display: none;
+}
+.navbar__mobile:hover {
+	cursor: pointer;
+}
+
+.navbar__mobile_icon {
+	position: relative;
+	z-index: 3;
+}
+.overlay {
+	position: fixed;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	z-index: 1;
+}
+
+@media screen and (max-width: 1024px) {
+	.navbar__container_nav {
+		display: none;
+	}
+	.navbar__mobile {
+		display: block;
+		margin-left: 5rem;
+	}
+	.navbar__mobile_nav {
+		position: fixed;
+		right: 0;
+		top: 0;
+		display: flex;
+		flex-direction: column;
+		align-items: left;
+		padding: 100px 0 0 2rem;
+		height: 100%;
+		width: 200px;
+		background: var(--color-bg);
+	}
+
+	.navbar__mobile_nav a {
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 50px;
+		text-transform: capitalize;
+		margin-right: 2rem;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.navbar__container_sign {
+		display: none;
+	}
+	.navbar_container_sign-icon {
+		display: flex;
+		flex: 0.4;
+		align-items: center;
+		justify-content: space-around;
+		margin-right: 1rem;
+	}
+	.navbar_container_sign-icon_icon {
+		height: 25px;
+		width: 25px;
+	}
+	.navbar__mobile {
+		margin: 0;
+	}
 }
