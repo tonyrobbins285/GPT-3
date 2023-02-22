@@ -91,3 +91,19 @@
 		margin-left: 0.7rem;
 	}
 }
+
+@media screen and (max-width: 420px) {
+	.footer__content {
+		margin: 3rem 0;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 3rem
+	}
+	.footer__content-logo {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+}

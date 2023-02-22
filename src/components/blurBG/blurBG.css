@@ -1,0 +1,29 @@
+.blurBG {
+    position: absolute;
+    z-index: 0;
+    filter: blur(282px);
+}
+
+.blur--1 {
+    width: 80%;
+    height: 20%;
+    background: #002853;
+    top: 0;
+    left: 0;
+}
+
+.blur--2 {
+    width: 80%;
+    height: 30%;
+    background: #07325f;
+    top: 50%;
+    left: 0;
+}
+
+.blur--3 {
+    width: 50%;
+    height: 20%;
+    background: #072d56;
+    top: 20%;
+    right: 0;
+}

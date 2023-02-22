@@ -5,7 +5,7 @@ function Article({ imgUrl, date, header, className }) {
 	return (
 		<div className={`article ${className}`}>
 			<div className="article__img">
-				<img src={imgUrl} />
+				<img src={imgUrl} alt="articleImg"/>
 			</div>
 			<div className="article__content">
 				<p>{date}</p>

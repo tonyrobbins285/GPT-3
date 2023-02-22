@@ -1,94 +1,70 @@
 .navbar {
-	display: flex;
-	align-items: center;
-	padding: 3rem 2rem;
+    display: flex;
+    align-items: center;
+    padding: 3rem 2rem;
+    height: 150px;
 }
 
 .navbar__container {
-	display: flex;
-	align-items: center;
-	flex: 2;
-	justify-content: start;
+    display: flex;
+    align-items: center;
+    flex: 2;
+    justify-content: start;
 }
 
-.navbar__container_logo {
-	display: flex;
-	align-items: center;
-	margin-right: 4rem;
+.navbar__container-logo {
+    display: flex;
+    align-items: center;
+    margin-right: 4rem;
 }
-.navbar__container_logo img {
-	width: 62.56px;
-	height: 16.02px;
-}
-
-.navbar__container_nav {
-	display: flex;
-	align-items: center;
-}
-.navbar__container_nav a {
-	font-weight: 500;
-	font-size: 18px;
-	line-height: 25px;
-	text-transform: capitalize;
-	margin-right: 2rem;
+.navbar__container-logo img {
+    width: 62.56px;
+    height: 16.02px;
 }
 
-.navbar__container_sign {
-	display: flex;
-	align-items: center;
+.navbar__container-nav {
+    display: flex;
+    align-items: center;
 }
-.navbar_container_sign-icon {
-	display: none;
-}
-
-.navbar__container_sign button {
-	font-weight: 500;
-	font-size: 18px;
-	line-height: 25px;
-	text-transform: capitalize;
-	margin-left: 2rem;
+.navbar__container-nav a {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: capitalize;
+    margin-right: 2rem;
 }
 
-.navbar__container_sign-up {
-	background: #ff4820;
-	border-radius: 5px;
-	padding: 1rem 2rem;
-	margin-right: 2rem;
+.navbar__container-sign {
+    display: flex;
+    align-items: center;
+}
+
+.navbar__container-sign button {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: capitalize;
+    margin-left: 2rem;
+}
+
+.navbar__container-sign button:last-child {
+    background: #ff4820;
+    border-radius: 5px;
+    padding: 1rem 2rem;
 }
 
 @media screen and (max-width: 1024px) {
-	.navbar__container_nav {
-		display: none;
-	}
+    .navbar__container-nav {
+        display: none;
+    }
 
-	.navbar__container_sign {
-		margin-right: 2rem;
-	}
-
-	.navbar__mobile_nav a {
-		font-weight: 500;
-		font-size: 18px;
-		line-height: 50px;
-		text-transform: capitalize;
-	}
+    .navbar__container-sign {
+        margin-right: 4rem;
+    }
 }
 
 @media screen and (max-width: 768px) {
-	.navbar__container_sign {
-		display: none;
-	}
-	.navbar_container_sign-icon {
-		display: flex;
-		flex: 1;
-		align-items: center;
-		justify-content: space-around;
-		margin-right: 2rem;
-	}
-	.navbar_container_sign-icon_icon {
-		height: 25px;
-		width: 25px;
-	}
-	.navbar_container_sign-icon_icon:hover {
-		cursor: pointer;
-	}
+    .navbar__container-sign {
+        display: none;
+    }
 }
