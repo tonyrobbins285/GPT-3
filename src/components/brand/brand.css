@@ -1,0 +1,16 @@
+.brand {
+   display: flex;
+   margin: 100px 4rem 100px 4rem;
+   align-items: center;
+   justify-content: space-evenly;
+   flex-wrap: wrap;
+   gap: 2rem;
+}
+.brand div {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.brand div:hover {
+   cursor: pointer;
+}

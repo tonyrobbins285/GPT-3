@@ -1,42 +1,107 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    scroll-behavior: smooth;
+	font-family: var(--font-family);
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	scroll-behavior: smooth;
+	color: #ffffff;
 }
 
 body {
-    background: var(--color-bg);
-    color: #FFFFFF;
+	background: var(--color-bg);
 }
 
 a {
-    text-decoration: none;
-    color: #FFFFFF;
-    font-family: var(--font-family);
+	position: relative;
+	text-decoration: none;
+}
+a:hover {
+	color: var(--color-text);
+}
+a::after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background: var(--gradient-bar);
+	height: 1px;
+	width: 100%;
+	transform: scaleX(0);
+	transition: transform 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+	transform-origin: left;
 }
 
-ul {
-    list-style-type: none;
-}
-
-button {
-    background: unset;
-    border: unset;
-    font-family: var(--font-family);
-    color: #FFFFFF;
+a:hover::after {
+	transform: scaleX(1);
+	transform-origin: left;
 }
 
 button:hover {
-    cursor: pointer;
+	transform: scale(1.1);
 }
 
-.gradient__bg {
-    background: radial-gradient(
-        circle at 3% 25%,
-        rgba(0, 40, 83, 1) 0%,
-        rgba(4, 12, 24, 1) 100%
-    );
+ul {
+	list-style-type: none;
+}
+
+.section {
+	max-width: 1200px;
+	position: relative;
+	z-index: 1;
+}
+
+button {
+	background: unset;
+	border: unset;
+}
+
+button:hover {
+	cursor: pointer;
+}
+.App {
+	max-width: 1200px;
+	margin: 0 auto;
+	position: relative;
+}
+.gradient--bg {
+	background: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%);
+}
+
+.gradient--text {
+	background: var(--gradient-text);
+	background-clip: text;
+	color: transparent;
+}
+
+.blurImg {
+	position: absolute;
+	z-index: 0;
+	filter: blur(282px);
+}
+
+.blur--1 {
+	width: 1013px;
+	height: 1013px;
+	background: #002853;
+	top: 0;
+	left: 0;
+	transform: translate(-50%, -50%);
+}
+
+.blur--2 {
+	width: 777px;
+	height: 777px;
+	background: #07325f;
+	top: 50%;
+	left: 0;
+}
+
+.blur--3 {
+	width: 701px;
+	height: 496px;
+	background: #072d56;
+	top: 15%;
+	right: 0;
 }

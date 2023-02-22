@@ -1,0 +1,40 @@
+.blog {
+	margin: 5rem 2rem;
+}
+
+.blog__header {
+	font-weight: 800;
+	font-size: 62px;
+	line-height: 75px;
+	margin-bottom: 2rem;
+}
+
+.blog__hero {
+	display: grid;
+	grid-template: repeat(2, 1fr) / 1.5fr repeat(2, 1fr);
+	gap: 2rem;
+}
+
+.blog__hero .item0 {
+	grid-area: 1 / 1 / span 2 / 2;
+}
+.item0 .article__content p {
+	margin: 1rem 0;
+}
+.item0 .article__content h4 {
+	font-weight: 800;
+	font-size: 25px;
+	line-height: 30px;
+	margin-bottom: auto;
+}
+
+@media screen and (max-width: 780px){
+	.blog__header {
+		font-size: 40px;
+		line-height: 50px;
+		margin-bottom: 2rem;
+	}
+   .blog__hero {
+      grid-template-columns: 1fr;
+   }
+}

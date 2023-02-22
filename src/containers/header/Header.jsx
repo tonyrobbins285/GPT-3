@@ -5,9 +5,11 @@ import ai from "../../assets/ai.png";
 
 function Header() {
 	return (
-		<div className="header">
+		<div className="header section">
 			<div className="header__content">
-				<h1>Let’s Build Something amazing with GPT-3 OpenAI</h1>
+				<h1 className="gradient--text">
+					Let’s Build Something amazing with GPT-3 OpenAI
+				</h1>
 				<p>
 					Yet bed any for travelling assistance indulgence unpleasing. Not
 					thoughts all exercise blessing. Indulgence way everything joy

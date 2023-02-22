@@ -1,0 +1,41 @@
+.article {
+	display: flex;
+	flex-direction: column;
+}
+
+.article__img {
+	flex: 1;
+}
+.article__img img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.article__content {
+	flex: 1.5;
+	display: flex;
+	flex-direction: column;
+	padding: 0 1rem;
+	background: var(--color-blog);
+}
+.article__content p {
+	font-weight: 700;
+	font-size: 11.649px;
+	line-height: 35px;
+}
+.article__content h4 {
+	font-weight: 800;
+	font-size: 19.3154px;
+	line-height: 30px;
+	margin-bottom: 2rem;
+}
+.article__content h6 {
+	font-weight: 700;
+	font-size: 11.649px;
+	line-height: 35px;
+}
+.article__content h6:hover {
+   cursor: pointer;
+   color: var(--color-text)
+}

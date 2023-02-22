@@ -1,0 +1,33 @@
+.CTA {
+	margin: 2rem 0;
+	display: flex;
+	justify-content: space-between;
+	padding: 2rem 2rem;
+	align-items: center;
+	border-radius: 10px;
+}
+
+.CTA__text p {
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 30px;
+	color: #0e0e0e;
+}
+.CTA__text h1 {
+	font-weight: 800;
+	font-size: 24px;
+	line-height: 45px;
+	color: #000000;
+}
+.CTA__button button {
+	padding: 1rem 3rem;
+	background: #000000;
+	border-radius: 40px;
+}
+
+@media screen and (max-width: 728px) {
+   .CTA {
+      flex-direction: column;
+      gap: 1rem;
+   }
+}

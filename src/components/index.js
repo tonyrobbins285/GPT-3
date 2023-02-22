@@ -1,4 +1,6 @@
-export { default as Article } from "./article/Article"
-export { default as Brand } from "./brand/Brand"
-export { default as CTA } from "./cta/CTA"
-export { default as Feature } from "./feature/Feature"
+import Article from "./article/Article";
+import Brand from "./brand/Brand";
+import CTA from "./cta/CTA";
+import Feature from "./feature/Feature";
+import Mobile from "./mobile/Mobile"
+export { Brand, Article, CTA, Feature, Mobile };

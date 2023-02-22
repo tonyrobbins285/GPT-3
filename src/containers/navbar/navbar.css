@@ -1,10 +1,7 @@
 .navbar {
 	display: flex;
 	align-items: center;
-	height: 100px;
-	max-width: 1200px;
-	margin: 0 auto;
-	padding: 3rem 2rem 0;
+	padding: 3rem 2rem;
 }
 
 .navbar__container {
@@ -56,51 +53,16 @@
 	background: #ff4820;
 	border-radius: 5px;
 	padding: 1rem 2rem;
-}
-
-.navbar__mobile {
-	position: relative;
-	z-index: 3;
-	display: none;
-}
-.navbar__mobile:hover {
-	cursor: pointer;
-}
-
-.navbar__mobile_icon {
-	position: relative;
-	z-index: 3;
-}
-.overlay {
-	position: fixed;
-	height: 100vh;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: rgba(0, 0, 0, 0.5);
-	z-index: 1;
+	margin-right: 2rem;
 }
 
 @media screen and (max-width: 1024px) {
 	.navbar__container_nav {
 		display: none;
 	}
-	.navbar__mobile {
-		display: block;
-		margin-left: 5rem;
-	}
-	.navbar__mobile_nav {
-		position: fixed;
-		right: 0;
-		top: 0;
-		display: flex;
-		flex-direction: column;
-		align-items: left;
-		padding: 100px 0 0 2rem;
-		height: 100%;
-		width: 200px;
-		background: var(--color-bg);
+
+	.navbar__container_sign {
+		margin-right: 2rem;
 	}
 
 	.navbar__mobile_nav a {
@@ -108,7 +70,6 @@
 		font-size: 18px;
 		line-height: 50px;
 		text-transform: capitalize;
-		margin-right: 2rem;
 	}
 }
 
@@ -118,16 +79,16 @@
 	}
 	.navbar_container_sign-icon {
 		display: flex;
-		flex: 0.4;
+		flex: 1;
 		align-items: center;
 		justify-content: space-around;
-		margin-right: 1rem;
+		margin-right: 2rem;
 	}
 	.navbar_container_sign-icon_icon {
 		height: 25px;
 		width: 25px;
 	}
-	.navbar__mobile {
-		margin: 0;
+	.navbar_container_sign-icon_icon:hover {
+		cursor: pointer;
 	}
 }
